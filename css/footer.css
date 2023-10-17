@@ -1,0 +1,119 @@
+@import url(common.css);
+
+footer{
+	width:100%;
+	border-top:solid 2px crimson;
+	/* margin-top:50px; */
+	padding-bottom:10px;
+}
+footer .footer1{
+	width:100%;
+	height:50px;
+	border-bottom:solid 1px rgba(0,0,0,0.2);
+}
+.footer1_in{
+	width:500px;
+	float:right;
+	display: flex;
+}
+.footmenu1, .footmenu2{flex: 1;}
+
+.select{ 
+	font-size:14px;
+	font-weight:400;
+	line-height:50px;
+	padding-left:20px;
+	border-left:solid 1px rgba(0,0,0,0.2);
+}
+/* .footer1_in>div:nth-of-type(2){
+	border-right:solid 1px #e9e9e9;
+} */
+
+.select:after{
+	content: "\e946";
+	font-family: xeicon;
+	font-size: 20px;
+	float: right;
+	width: 50px;
+	border-left:solid 1px rgba(0,0,0,0.2);
+	text-align: center;
+	cursor: pointer;
+}
+.factive:after{
+	content: "\e943";
+	font-family: xeicon;
+	font-size: 20px;
+	float: right;
+	width: 50px;
+	border-left:solid 1px #e9e9e9;
+	text-align: center;
+}
+
+.footmenu1, .footmenu2{position:relative;}
+.footmenu1 .fbox1,
+.footmenu2 .fbox2{
+	display:none;
+	position:absolute;
+	bottom:105%;
+	left:0;
+	width:250px;
+  height:200px;
+	border:1px solid #e9e9e9;
+	padding:10px;
+  box-sizing: border-box;
+	padding-left:20px;
+	padding-right:10px;
+	background-color:#fff;
+  overflow-y: scroll;
+}
+.footmenu1 .fbox1>ul>li,
+.footmenu2 .fbox2>ul>li{
+	flex: 1;
+	margin:10px 15px 10px;
+	padding:0 20px 8px 0;
+  box-sizing: border-box;
+	border-bottom:solid 1px #e9e9e9;
+	font-size:14px;
+	font-weight:500;
+}
+.footmenu1 .fbox1>ul>li:last-child,
+.footmenu2 .fbox2>ul>li:last-child{
+  border-bottom:none;
+}
+
+.footmenu1 .fbox1>ul>li,
+.footmenu2 .fbox2>ul>li{margin-bottom:5px;}
+
+.footmenu1 .fbox1>ul>li>ul>li>a,
+.footmenu2 .fbox2>ul>li>ul>li>a{
+	color:#666;
+	font-size:13px;
+	font-weight:normal;
+}
+
+footer .footer2{
+	width:900px;
+	margin:30px auto;
+  display:flex;
+  position:relative;
+}
+.ft_text{
+  margin:auto;
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translateY(-50%);
+  text-align:center;
+  line-height: 25px;
+  color:#333;
+}
+.ft_text span{font-weight:600;}
+.ft_text a{font-weight:500;}
+.ft_text address,
+.ft_text em{font-style:normal;}
+.ft_text address{font-size:13px;}
+.ft_text em{
+  margin:0 10px 0;
+  color:rgba(0,0,0,0.5);
+  font-weight:600;
+}
